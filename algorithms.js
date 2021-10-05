@@ -87,4 +87,17 @@ const appleAndOrange = (s, t, a, b, apples, oranges) => {
 // appleAndOrange(2, 3, 1, 5, [2], [-2]);
 
 
+// Number Line Jumps
+const kangaroo = (x1, v1, x2, v2) => {
+  if (x1 === x2 && v1 === v2) {
+    return "YES";
+  } else if (x1 > x2 && v2 > v1) {
+    return "YES";
+  } else if (x2 > x1 && v1 > v2) {
+    return "YES";
+  } else {
+    return "NO";
+  }
+};
 
+console.log(kangaroo(0, 3, 4, 2));
