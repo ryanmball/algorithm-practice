@@ -1,6 +1,5 @@
 // Birthday Cake Candles
 // Return the count of the maximun number in the array (count of tallest candles)
-
 let candles = [3, 2, 1, 3];
 
 function birthdayCakeCandles(candleNums) {
@@ -13,12 +12,11 @@ function birthdayCakeCandles(candleNums) {
   });
   return count;
 }
-
 // console.log(birthdayCakeCandles(candles));
+
 
 // Time Conversion
 // Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
-
 let firstTime = "12:01:00PM";
 let secondTime = "12:01:00AM";
 
@@ -38,12 +36,11 @@ const timeConversion = (time) => {
     return `${hours}:${minutes}:${seconds}`;
   }
 };
+// console.log(timeConversion(secondTime));
 
-console.log(timeConversion(secondTime));
 
 // Grading Students
 // Write code to automate the rounding process for grading of students
-
 const gradingStudents = (grades) => {
   let roundedGrades = [];
   grades.forEach((grade) => {
@@ -59,5 +56,35 @@ const gradingStudents = (grades) => {
   });
   return roundedGrades;
 };
+// console.log(gradingStudents([73, 67, 38, 33]));
 
-console.log(gradingStudents([73, 67, 38, 33]));
+
+// Example of using Object.fromEntries functionality
+// var fruits = [
+//   { name: "apple", color: "red" },
+//   { name: "banana", color: "yellow" },
+//   { name: "grape", color: "purple" },
+// ];
+// console.log(Object.fromEntries(fruits.map((key) => [key.name, key.color])));
+
+
+// Count Apples & Oranges
+const appleAndOrange = (s, t, a, b, apples, oranges) => {
+  let count = [0, 0];
+  apples.forEach((apple) => {
+    if (a + apple >= s && a + apple <= t) {
+      count[0]++;
+    }
+  });
+  oranges.forEach(orange => {
+    if (b + orange >= s && b + orange <= t) {
+      count[1]++;
+    }
+  });
+  console.log(count[0]);
+  console.log(count[1]);
+};
+// appleAndOrange(2, 3, 1, 5, [2], [-2]);
+
+
+

@@ -26,3 +26,17 @@ var multiply = (num1, num2) => {
   return num1 * num2;
 };
 console.log(multiply(20, 9));
+
+// Scope & variable behavior in JS
+
+// Variables can be redefined within functions in JS (not in Ruby)
+var x = 100;
+
+function addOne(num) {
+  x = 1;
+  // var x = 1;
+  return num + x;
+}
+console.log(x);
+console.log(addOne(5));
+console.log(x);
