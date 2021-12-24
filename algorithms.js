@@ -149,3 +149,8 @@ function birthday(s, d, m) {
 }
 
 // birthday([1, 2, 1, 3, 2], 3, 2);
+
+// Divisible Sum Pairs
+const divisibleSumPairs = (n, k, ar) => {
+  
+};
