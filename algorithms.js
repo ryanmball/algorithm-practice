@@ -110,4 +110,23 @@ const getTotal = (a, b) => {
   console.log(results.length);
 };
 
-getTotal([2, 4], [16, 32, 96]);
+// getTotal([2, 4], [16, 32, 96]);
+
+const breakingRecords = (scores) => {
+  let minScore = scores[0];
+  let maxScore = scores[0];
+  let count = [0, 0];
+  for (let i = 0; i <= scores.length; i++) {
+    if (scores[i] > maxScore) {
+      maxScore = scores[i];
+      count[0]++;
+    } else if (scores[i] < minScore) {
+      minScore = scores[i];
+      count[1]++;
+    }
+  }
+  // console.log(count);
+  return count;
+};
+
+breakingRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]);
