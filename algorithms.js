@@ -133,6 +133,19 @@ const breakingRecords = (scores) => {
 // breakingRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]);
 
 // Subarray Division
-const birthday = (s, d, m) => {
-  
-};
+function birthday(s, d, m) {
+  let waysDivided = 0;
+  for (let i = 0; i < s.length; i++) {
+    let sum = 0;
+    for (let j = i; j < i + m; j++) {
+      sum += s[j];
+    }
+    if (sum === d) {
+      waysDivided++;
+    }
+  }
+  // console.log(waysDivided);
+  return waysDivided;
+}
+
+// birthday([1, 2, 1, 3, 2], 3, 2);
