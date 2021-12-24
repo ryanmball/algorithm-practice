@@ -112,6 +112,7 @@ const getTotal = (a, b) => {
 
 // getTotal([2, 4], [16, 32, 96]);
 
+// Breaking the Records
 const breakingRecords = (scores) => {
   let minScore = scores[0];
   let maxScore = scores[0];
