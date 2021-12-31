@@ -164,4 +164,9 @@ const divisibleSumPairs = (n, k, ar) => {
   return count;
 };
 
-divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]);
+// divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]);
+
+// Bill Division
+const bonAppetit = (bill, k, b) => {
+  
+};
